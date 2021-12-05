@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" prefHeight="461.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameOfLifeController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="startBtn" mnemonicParsing="false" onAction="#NextGenPress" prefHeight="25.0" prefWidth="130.0" text="Start" />
+            <Button mnemonicParsing="false" onAction="#resetPress" text="Reset" />
+            <Label prefHeight="21.0" prefWidth="205.0" text="Reset when game over" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <Canvas fx:id="canvas" height="437.0" width="467.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
